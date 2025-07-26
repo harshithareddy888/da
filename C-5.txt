@@ -1,0 +1,235 @@
+COURSE-5
+
+==> SORT FUNCTION IN SPREADSHEETS-
+ sorting can be done in two ways for spreadsheets, One is using menu and the other is using =SORT function
+=SORT(A2:D4, 2, TRUE)
+- here, After your first open parenthesis, reference the first cell in which data is collected from. In this case, that's A2.
+Then you'll include a colon and write the last cell you want included in the function, which is D6.
+A2 colon D6 is the range for this function. Next, write a comma to separate the range from what we're sorting by, which is column B.
+You should keep in mind that this part of the function doesn't recognize column letters. So in this case, we use the corresponding number instead, which is 2, since column B is the second column in our range.
+Now add another comma. In this next part you'll need to decide whether you want the data in this column to be in ascending or descending order. A TRUE statement is in ascending order, and FALSE is descending. Because we want the tables to be listed starting from table number one, we'll write TRUE for ascending, and then end the function with a closed parenthesis. Now, let's see our function play out.
+
+
+==> Lock data in a table
+Using functions to convert data can lead to problems, which data professionals must be prepared to fix. For example, if a reference value changes, the calculated value also changes. Locking data in a table by changing it from a function to a value ensures a cell stays consistent even if the data around it changes.
+
+==> DIFFERENCE BTW NUMERIC AND INTEGER IN SQL-
+Number allows a decimal component (Ex: 3.43) Integer doesn't. If you try to store 3.43 in an Integer, it will just store 3
+
+Number allows for much larger values than Integer does.
+
+If you are using whole numbers, I recommend using Integer. If you are using numbers that may have a decimal component, I recommend Number.
+
+
+==> IMPORT AND COMBINE DATA FROM SPREADSHEETS AND DATABASE
+--> Import data in spreadsheets
+As you learned earlier, in spreadsheets you use the IMPORTRANGE function to import a range of cells from another spreadsheet into your current spreadsheet. The syntax is: =IMPORTRANGE(spreadsheet_url, range_string). 
+
+In this formula, spreadsheet_url is the URL of the spreadsheet from which you want to import data. The specific cells you want to import, such as A2:B6, are specified by range_string. If the spreadsheet has multiple tabs, you also need to specify the name of the tab as part of the range. 
+
+An example of this is a company that needs to track who made retirement contributions so that it can make sure the company match is correctly distributed. The analysts would use IMPORTRANGE to pull all retirement contribution information into a spreadsheet that contains all of the employees year-end salaries and bonuses. This enables them to determine which employees made contributions and are eligible for matching funds. 
+
+--> Import data in SQL
+In contrast to spreadsheets, SQL does not include a function for importing data. Instead, a method you can use to import data from one table to another is to use the INSERT INTO command together with a SELECT statement. 
+The syntax is:
+	INSERT INTO [destination_table_name]
+	SELECT [column names, separated by commas, or * for all columns]
+	FROM [source_table_name]
+	WHERE [condition]
+-- In this syntax, the SQL query inserts rows from a source table into a destination table based on the WHERE clause. 
+example:
+	INSERT INTO customer_promotion
+	SELECT *
+	FROM customers
+	WHERE total_sales = 0 AND postal_code = '12345'
+
+==> COMBINE DATA
+Another tool in your data analyst toolkit is your ability to join together two or more text strings that are stored in separate columns or fields. 
+-->Combine data in spreadsheets
+In spreadsheets, you use the CONCATENATE function to join together two or more text strings, such as combining street addresses and primary contacts in a business’ vendor database. 
+
+The basic syntax is =CONCATENATE(item 1, item 2). You can add multiple items by separating them with commas. Where appropriate, such as when you’re combining a customer’s first and last name, you should add a space between the items you’re combining by typing quotation marks space quotation marks [“ ”] between the items. Separate this information by a comma as well. This would change the formula to: =CONCATENATE(item 1, " ", item 2). 
+
+-->Combine data in SQL
+In SQL, use the CONCAT function to join strings together to create new text strings. You might combine data simply to improve the readability of reports (such as combining a customer’s first and last name when generating a customer list). Or, you might combine data to generate a unique identifier for the rows in a table. 
+Here is the basic syntax:
+	SELECT CONCAT(field1, " ", field2)
+	FROM [table_name]
+
+Notice that this syntax includes " " so that there is a space between the combined fields. With this syntax, SQL combines field1 and field2 with a space between them. 
+
+By default, SQL includes the field names as headers when you run a query. However, if you use the CONCAT function, SQL doesn’t know what to use as a header. For this reason, you should include an alias for the combined fields to help with readability. You give the combined fields an alias by using AS:
+	SELECT CONCAT(field1, " ", field2) AS alias
+	FROM [table_name]
+
+Example:
+	SELECT CONCAT(first_name, " ", last_name) AS Customer_Name
+	FROM [table_name]
+
+
+==>STRING MANIPULATION IN SQL
+-->CONCAT
+SQL's CONCAT function allows you to join together two or more string values, simplifying this task, as follows:
+SELECT 
+    CONCAT(first_name, ' ', last_name) AS full_name 
+FROM 
+    customers;
+
+-->CONCAT_WS
+You'd use CONCAT_WS, which stands for CONCAT With Separator, to achieve this. It's similar to CONCAT, but it includes a separator, such as a space or period, between the strings. For Example you're tasked with creating a report that includes a website's URL components: the protocol (http), domain name (your_company), and domain (com).
+syntax:
+- SELECT CONCAT_WS('.', 'www', 'your_company', 'com') as website FROM web_data;
+
+Here, CONCAT_WS adds a period ('.') between each part of the website URL, ensuring the URL is in the correct, navigable format.
+
+-->CONCAT with ||
+In BigQuery, you can use the || operator to concatenate strings
+example:
+SELECT book_name || ' - ' || edition AS full_book_title FROM library;
+
+-- VLOOKUP only returns the first match it finds within a specified range and can only search in columns to the right.
+
+==> VLOOKUP Core Concepts
+Spreadsheet functions can be used to quickly find information and perform calculations using specific values. VLOOKUP, or Vertical Lookup, is one such function that vertically searches for a certain value in a column to return a corresponding piece of information.
+
+-->VLOOKUP functionality
+VLOOKUP searches for a search term, called a search_key, in one column of a spreadsheet. When the search_key is found, the function returns the data from another column of the row from which it  was located. VLOOKUP returns only the value that corresponds to the first item it matches. So, if there are multiple matching values, the spreadsheet will return only data about the first one. 
+
+--> VLOOKUP use cases
+Here are two common reasons why you might use VLOOKUP:
+
+- Populating data in a spreadsheet: Perhaps a store manager is tracking incoming shipments before a busy holiday. They could use VLOOKUP to look up product ID codes in a product spreadsheet and retrieve the corresponding product information from another spreadsheet. This would help the manager know how many stock clerks they need to schedule to work when the shipments arrive.
+
+- Merging data from one spreadsheet with data in another: If a teacher keeps one spreadsheet for student grades and another for attendance, they could use VLOOKUP to combine the spreadsheets. That way, they could search for a particular student in the attendance sheet, and VLOOKUP would pull the corresponding attendance record into the grades spreadsheet.
+
+--> VLOOKUP syntax
+         VLOOKUP(search_key, range, index, is_sorted)
+- search_key
+This is the value the function will search for. It can be a number, text string, or cell reference. 
+
+-range
+This is the range of cells over which the function will search and return information. The first column in the range is searched. When the search key is found, the index from that row is returned. 
+
+-index
+This is the position of the column that contains the data to be returned. The first column in the range is column number 1, and each column is numbered sequentially to the right. 
+ 
+-is_sorted
+This indicates whether to return an approximate or exact match. 
+
+Use VLOOKUP to search for a value in a column and return a corresponding piece of information. It’s a very useful tool for data professionals, as it enables them to combine data from multiple sources and find information quickly. Keep in mind that the column that matches the search_key in a VLOOKUP formula should be on the left side of the data. The range must include both the column being searched and the column that contains the information being returned. TRUE means an approximate match, and FALSE means an exact match on the search_key. 
+
+
+
+ 
+A complex query which consists of Clauses like CASE, HAVING and COUNT, CONCAT, LEFT JOIN, GROUP BY etc
+
+SELECT
+  Warehouse.warehouse_id,
+  CONCAT(Warehouse.state, ': ', Warehouse.warehouse_alias) AS warehouse_name,
+  COUNT(Orders.order_id) AS number_of_orders,
+  (SELECT COUNT(*) FROM your-project.warehouse_orders.orders AS Orders) AS total_orders,
+  CASE
+    WHEN COUNT(Orders.order_id)/(SELECT COUNT(*) FROM your-project.warehouse_orders.orders AS Orders) <= 0.20
+    THEN 'Fulfilled 0-20% of Orders'
+    WHEN COUNT(Orders.order_id)/(SELECT COUNT(*) FROM your-project.warehouse_orders.orders AS Orders) > 0.20
+    AND COUNT(Orders.order_id)/(SELECT COUNT(*) FROM your-project.warehouse_orders.orders AS Orders) <= 0.60
+    THEN 'Fulfilled 21-60% of Orders'
+    ELSE 'Fulfilled more than 60% of Orders'
+  END AS fulfillment_summary
+FROM your-project.warehouse_orders.warehouse AS Warehouse
+LEFT JOIN your-project.warehouse_orders.orders AS Orders
+ON Orders.warehouse_id = Warehouse.warehouse_id
+GROUP BY
+  Warehouse.warehouse_id,
+  warehouse_name
+HAVING
+  COUNT(Orders.order_id) > 0
+
+
+==> SQL functions
+- HAVING: The HAVING clause filters the results of a SQL query based on conditions applied after the grouping.
+- CASE: CASE provides conditional logic in SQL queries, similar to an 'if-else' structure in programming languages.
+- IF: IF performs a simple conditional test and returns a value depending on the outcome.
+- COUNT: COUNT performs a simple conditional test and returns a value depending on the outcome. 
+
+==> SUB QUERIES
+Subqueries can make projects easier and more efficient by allowing complex operations to be performed in a single query, reducing the need for multiple trips to the database. Subqueries also make your code more readable and maintainable. 
+
+==>FEW RULES TO USE SUBQUERIES
+- Subqueries must be enclosed within parentheses.
+- A subquery can have one or more columns specified in the SELECT clause. 
+- Subqueries that return more than one row can only be used with multiple value operators, such as the IN operator which allows you to specify multiple values in a WHERE clause.
+- A subquery can’t be nested in a SET command. The SET command is used with UPDATE to specify which columns (and values) are to be updated in a table.
+- Comparison operators such as >, <, or = help you compare data in subqueries. You can also use multiple row operators including IN, ANY, or ALL.
+
+
+==> Terms and definitions for Course 5, Module 3
+Absolute reference: A reference within a function that is locked so that rows and columns won’t change if the function is copied
+
+Aggregation: The process of collecting or gathering many separate pieces into a whole
+
+Aliasing: Temporarily naming a table or column in a query to make it easier to read and write
+
+COUNT DISTINCT: A SQL function that only returns the distinct values in a specified range
+
+Data aggregation: The process of gathering data from multiple sources and combining it into a single, summarized collection
+
+INNER JOIN : A SQL function that returns records with matching values in both tables
+
+JOIN: A SQL function that is used to combine rows from two or more tables based on a related column
+
+LEFT JOIN: A SQL function that will return all the records from the left table and only the matching records from the right table
+
+LIMIT: A SQL clause that specifies the maximum number of records returned in a query
+
+MATCH: A spreadsheet function used to locate the position of a specific lookup value
+
+OUTER JOIN: A SQL function that combines RIGHT and LEFT JOIN to return all matching records in both tables
+
+RIGHT JOIN: A SQL function that will return all records from the right table and only the matching records from the left. 
+
+Subquery: A SQL query that is nested inside a larger query
+
+VALUE: A spreadsheet function that converts a text string that represents a number to a numeric value
+
+
+==>Functions with multiple conditions
+As you’ve been learning, conditional functions and formulas perform calculations according to specific conditions. In addition, functions including SUMIF and COUNTIF only work in cases where there is one condition. However, if you have more than one condition, you would need to use the SUMIFS or the COUNTIFS function instead. These functions enable you to perform calculations if you have two or more conditions. 
+
+==> Elements of a pivot table
+pivot table is a tool used to sort, reorganize, group, count, total, or average data in spreadsheets. 
+Pivot tables make it possible to view data in multiple ways in order to identify insights and trends. They can help you quickly make sense of larger data sets by comparing metrics, performing calculations, and generating reports. They’re also useful for answering specific questions about your data. 
+
+A pivot table has four basic parts: rows, columns, values, and filters. 
+-The rows of a pivot table organize and group data you select horizontally
+- The columns organize and display values from your data vertically. Similar to rows, columns can be pulled directly from the data set or created using values.
+- Values are used to calculate and count data. This is where you input the variables you want to measure. This is also how you create calculated fields in your pivot table. 
+- A calculated field is a new field within a pivot table that carries out certain calculations based on the values of other fields
+- Finally, the filters section of a pivot table enables you to apply filters based on specific criteria—just like filters in regular spreadsheets! 
+
+==> Temporary tables, or temp tables, store subsets of data from standard data tables for a certain period of time. Temp tables allow you to run calculations in temporary data tables without needing to make modifications to the primary tables in your database. Because they are temporary, they are automatically deleted at the end of your SQL session. 
+- There are even more ways to create a temp table. Instead of using the WITH clause, you can use the SELECT INTO or the CREATE TABLE clauses. 
+- The SELECT INTO clause copies data from one table into a new table, but doesn’t add the new table to the database. It’s useful if you want to make a copy of a table with a specific condition.
+- The CREATE TABLE clause is a good option when several people need to access the same temp table. This statement adds the table into the database. 
+- Different clauses have their own strengths, so understanding how they work is helpful for using them effectively. The specific clause you use will depend on your preferences and one the project’s demands
+-They can collect the results of multiple, separate queries. This is sometimes referred to as data staging. Staging is useful if you need to perform a query on the collected data or merge the collected data.
+
+Basic SQL calculations are often used when working with datasets that require quick and efficient processing of numerical data. These calculations allow analysts to apply arithmetic operations like addition, subtraction, multiplication, and division directly within their queries.
+In large quantities of data, basic SQL calculations simplify the process of uncovering patterns and trends. They allow users to aggregate values, compare metrics, and identify key insights without having to manually compute them outside the database. This enhances efficiency and ensures accuracy
+
+
+==> Connected Sheets integrates both BigQuery and Google Sheets, allowing the user to analyze billions of rows of data in Sheets without any need for specialized knowledge, such as SQL.
+
+==> Glossary terms from module 4
+Terms and definitions for Course 5, Module 4
+Array: A collection of values in spreadsheet cells
+Calculated field: A new field within a pivot table that carries out certain calculations based on the values of other fields
+Data security: Protecting data from unauthorized access or corruption by adopting safety measures
+Data validation process: The process of checking and rechecking the quality of data so that it is complete, accurate, secure and consistent 
+GROUP BY: A SQL clause that groups rows that have the same values from a table into summary rows 
+Modulo: An operator (%) that returns the remainder when one number is divided by another
+Profit margin: A percentage that indicates how many cents of profit has been generated for each dollar of sale
+Summary table: A table used to summarize statistical information about data
+SUMPRODUCT: A function that multiplies arrays and returns the sum of those products
+Temporary table: A database table that is created and exists temporarily on a database server
+Underscores: Lines used to underline words and connect text characters

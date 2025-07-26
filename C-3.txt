@@ -1,0 +1,80 @@
+DATA TRANSFORMATION-
+
+Data transformation usually involves:
+
+- Adding, copying, or replicating data 
+
+- Deleting fields or records 
+
+- Standardizing the names of variables
+
+- Renaming, moving, or combining columns in a database
+
+- Joining one set of data with another
+
+- Saving a file in a different format. For example, saving a spreadsheet as a comma separated values (.csv) file.
+
+WHY TRANSFORM DATA?
+Goals for data transformation might be: 
+
+- Data organization: better organized data is easier to use
+
+- Data compatibility: different applications or systems can then use the same data
+
+- Data migration: data with matching formats can be moved from one system to another
+
+- Data merging: data with the same organization can be merged together
+
+- Data enhancement: data can be displayed with more detailed fields 
+
+- Data comparison: apples-to-apples comparisons of the data can then be made 
+
+METADATA-
+--> Metadata can be found in photos, emails, spreadsheets, websites, and much more! In your daily life, you use metadata to stay organized. As a data analyst, you’ll use metadata to understand the content and context of your data, as well as how it’s structured. Metadata provides data analysts with information about a data’s file type, title, geolocation, who created it, who last modified it, and who has access to it. As a data analyst, it’s important to keep accurate records of metadata to ensure that you are able to find, use, preserve, and reuse data in the future. Remember, it will be your responsibility to manage and make use of data in its entirety; metadata is as important as the data itself.
+--> Metadata helps data analysts make data-driven decisions more quickly and efficiently. It also ensures that data and databases are reliable and consistent. 
+Metadata repositories are used to store metadata—including data from second-party and third-party companies. These repositories describe the state and location of the metadata, the structure of the tables inside it, and who has accessed the repository. Data analysts use metadata repositories to ensure that they use the right data appropriately.
+--> metadata is stored in a single, central location and it gives the company standardized information about all of its data.
+
+
+CSV-
+==> importing csv into google sheets
+         you can import data from some data sources, like .csv files into a Google spreadsheet from the File menu. Keep in mind that, when you use this method, data that is updated in the .csv will not automatically be updated in the Google Sheet. Instead, it will need to be manually—and continually—updated in the Google Sheet. In some situations, such as when you want to be able to keep track of changes you’ve made, this method is ideal. In other situations, you might need to keep the data the same in both places, and using data that doesn’t update automatically can be time-consuming and tedious. Further, trying to maintain the same dataset in multiple places can cause errors later on. 
+Fortunately, there are tools to help you automate data imports so you don’t need to continually update the data in your current spreadsheet.
+
+=> IMPORT functions in Google Sheets
+-The IMPORTRANGE function
+In Google Sheets, the IMPORTRANGE function can import all or part of a dataset from another Google Sheet.
+To use this function, you need two pieces of information: 
+1. The URL of the Google Sheet from which you’ll import data.
+2. The name of the sheet and the range of cells you want to import into your Google Sheet.
+
+- The IMPORTHTML function
+Importing HTML tables is a basic method to extract data from public web pages. This process is often called "scraping".
+In Google Sheets, you can use the IMPORTHTML function to import the data from an HTML table (or list) on a web page.
+
+-The IMPORTDATA function
+Sometimes data displayed on the web is in the form of a comma- or tab-delimited file. 
+You can use the IMPORTDATA function in a Google Sheet to import data into a Google Sheet. 
+
+
+BigQuery:
+Three basic parts of a query: SELECT, FROM, and WHERE. As a refresher: 
+
+SELECT is the section of a query that indicates what data you want SQL to return to you.
+
+FROM is the section of a query that indicates which table the desired data comes from. You must provide a full path to the table. The path includes the project name, database name, and table name, each separated by a period.
+
+WHERE is the section of a query that indicates any filters you’d like to apply to your table.
+
+
+I think this activity helped with the basic structure and writing the queries by ourselves, we can use available public datasets so its easy to work with and learn
+I think understanding the basic structure of query will help with complex queries in the future because the complex queries becomes easier when the core basics are strong
+
+DATA SECURITY-
+- Data security means protecting data from unauthorized access or corruption by putting safety measures in place. Usually the purpose of data security is to keep unauthorized users from accessing or viewing sensitive data.
+
+- Companies need to find ways to balance their data security measures with their data access needs. 
+Luckily, there are a few security measures that can help companies do just that. The two we will talk about here are encryption and tokenization. 
+==> Encryption- Encryption uses a unique algorithm to alter data and make it unusable by users and applications that don’t know the algorithm. This algorithm is saved as a “key” which can be used to reverse the encryption; so if you have the key, you can still use the data in its original form.  
+
+==> Tokenization- Tokenization replaces the data elements you want to protect with randomly generated data referred to as a “token.” The original data is stored in a separate location and mapped to the tokens. To access the complete original data, the user or application needs to have permission to use the tokenized data and the token mapping. This means that even if the tokenized data is hacked, the original data is still safe and secure in a separate location. 

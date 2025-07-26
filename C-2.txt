@@ -1,0 +1,327 @@
+COURSE-2 - ASK QUESTIONS TO MAKE DATA DRIVEN DECISIONS
+Summary of the course:
+you’ll learn how data analysts use structured thinking to solve business problems. Then, you’ll explore how to ask effective questions and use the answers to tell a meaningful story about data. Finally, you’ll discover strategies for effectively communicating and collaborating with your stakeholders when defining a problem and presenting data insights. This will enable you to support and advance business goals with data
+MODULE-1:
+
+--> data drives decision-making, explore data of all kinds and its impact on all sorts of business decisions. 
+--> Successful data analysts balance the needs and expectations of their team and the stakeholders they support
+--> You’ll also investigate how structured thinking helps analysts understand problems and come up with solutions. 
+--> Data analysts are constantly asking questions in order to find solutions and identify business potential
+Step 1: Ask
+It’s impossible to solve a problem if you don’t know what it is. 
+These are some things to consider:
+--> Define the problem you’re trying to solve 
+--> Make sure you fully understand the stakeholder’s expectations
+--> Focus on the actual problem and avoid any distractions
+--> Collaborate with stakeholders and keep an open line of communication
+--> Take a step back and see the whole situation in context
+Step 2: Prepare 
+You will decide what data you need to collect in order to answer your questions and how to organize it so that it is useful. 
+You might use your business task to decide: 
+--> What metrics to measure
+--> Locate data in your database
+--> Create security measures to protect that data
+Step 3: Process
+Clean data is the best data and you will need to clean up your data to get rid of any possible errors, inaccuracies, or inconsistencies. 
+This might mean:
+-->Using spreadsheet functions to find incorrectly entered data 
+--> Using SQL functions to check for extra spaces
+--> Removing repeated entries
+--> Checking as much as possible for bias in the data
+Step 4: Analyze 
+You will want to think analytically about your data. At this stage, you might sort and format your data to make it easier to: 
+--> Perform calculations
+--> Combine data from multiple sources
+--> Create tables with your results
+Step 5: Share
+Everyone shares their results differently so be sure to summarize your results with clear and enticing visuals of your analysis using data via tools like graphs or dashboards. This is your chance to show the stakeholders you have solved their problem and how you got there. Sharing will certainly help your team:  
+--> Make better decisions
+--> Make more informed decisions
+--> Lead to stronger outcomes
+--> Successfully communicate your findings
+Step 6: Act
+Now it’s time to act on your data. You will take everything you have learned from your data analysis and put it to use. This could mean providing your stakeholders with recommendations based on your findings so they can make data-driven decisions.
+
+These six steps can help you to break the data analysis process into smaller, manageable parts, which is called structured thinking. This process involves four basic activities:
+1. Recognizing the current problem or situation
+2. Organizing available information 
+3. Revealing gaps and opportunities
+4. Identifying your options
+
+- No matter how much information you have or how advanced your tools are, your data won’t tell you much if you don’t start with the right questions. Think of it like a detective with tons of evidence who doesn’t ask a key suspect about it
+SMART:
+Specific:  Is the question specific? Does it address the problem? Does it have context? Will it uncover a lot of the information you need?
+Measurable:  Will the question give you answers that you can measure?
+Action-oriented:  Will the answers provide information that helps you devise some type of plan?
+Relevant:  Is the question about the particular problem you are trying to solve?
+Time-bound:  Are the answers relevant to the specific time being studied?
+
+Examples of SMART questions
+Here's an example that breaks down the thought process of turning a problem question into one or more SMART questions using the SMART method: 
+What features do people look for when buying a new car?
+
+--> Specific: Does the question focus on a particular car feature?
+--> Measurable: Does the question include a feature rating system?
+--> Action-oriented: Does the question influence creation of different or new feature packages?
+--> Relevant: Does the question identify which features make or break a potential car purchase?
+--> Time-bound: Does the question validate data on the most popular features from the last three years? 
+
+- Questions should be open-ended
+
+As a reminder, SMART questions are
+- Specific: Questions are simple, significant, and focused on a single topic or a few closely related ideas.
+- Measurable: Questions can be quantified and assessed.
+- Action-oriented: Questions encourage change.
+- Relevant: Questions matter, are important, and have significance to the problem you’re trying to solve. 
+- Time-bound: Questions specify the time to be studied
+
+Remember: If a question is worth asking, then the answer is worth recording. Commit yourself to taking great notes during your conversation. 
+
+MODULE-2:
+Data driven decision making VS Data inspired decision making:
+DATA DRIVEN DECISION MAKING -
+--- Both data-driven and data-inspired approaches are rooted in the idea that data is inherently valuable for making a decision. Well-curated data can provide information to  decision-makers that improves the quality of their decisions. Remember: Data does not make decisions, but it does improve them.
+--- The phrase “data-driven decisions” means exactly that: Data is used to arrive at a decision. This approach is limited by the quantity and quality of readily-available data. If the quality and quantity of the data is sufficient, this approach can far improve decision-making. But if the data is insufficient or biased, this can create problems for decision-makers.
+DATA INSPIRED DECISION MAKING -
+--- Data-inspired decisions include the same considerations as data-driven decisions while adding another layer of complexity. They create space for people using data to consider a broader range of ideas: drawing on comparisons to related concepts, giving weight to feelings and experiences, and considering other qualities that may be more difficult to measure. Data-inspired decision-making can avoid some of the pitfalls that data-driven decisions might be prone to. 
+
+Using data to draw accurate conclusions and make good recommendations starts with having complete, correct, and relevant data.
+Note: It’s important to remember that it’s possible to have solid data and still make the wrong choices. It’s up to data analysts to interpret the data accurately. When data is interpreted incorrectly, that incorrect interpretation can lead to huge losses. 
+
+---There’s a difference between making a decision with incomplete data and making a decision with a small amount of data. You learned that making a decision with incomplete data is dangerous. But sometimes accurate data from a small test can help you make a good decision
+
+Spreadsheets -- you can also use them to clean, sort, and filter data. And both offer a range of chart types, graphing tools, and pivot tables for creating effective data visualizations. 
+
+Tableau --Tableau is used to create powerful and interactive visualizations, making it an excellent choice for data visualizations such as live dashboards. Tableau also makes it easy to create charts, graphs, and dashboards in a drag-and-drop interface.
+
+
+CREATING A DASHBOARD-
+
+STEP-1: Identify the stakeholders who need to see the data and how they will use it-
+Begin by asking effective questions
+
+STEP-2:Design the dashboard (what should be displayed)
+Use these tips to help make your dashboard design clear and easy to follow:
+--> Use a clear header to label the information.
+--> Add short text descriptions to each visualization.
+--> Show the most important information at the top.
+
+STEP-3. Create mockups if desired
+A mockup is a simple draft of a visualization used for planning a dashboard and evaluating its progress. This is optional, but a lot of data analysts like to sketch out their dashboards before creating them. 
+
+STEP-4. Select the visualizations
+You have a lot of options here. Which visualizations you select depends on the data story you are telling. If you need to show a change in values over time, line charts or bar graphs might be the best choice. If your goal is to show how each part contributes to the whole amount being reported, a pie or donut chart is probably a better choice. 
+
+STEP-5. Create filters as needed
+Filters show certain data while hiding the rest of the data in a dashboard. This can be a big help to identify patterns while keeping the original data intact.
+
+DASHBOARD-
+Dashboard is a single point of access for managing a business's information. It allows analysts to pull key information from data in a quick review by visualizing the data in a way that makes findings easy to understand. 
+TYPES OF DASHBOARDS- 
+--> Strategic: focuses on long term goals and strategies at the highest level of metrics
+A wide range of businesses use strategic dashboards when evaluating and aligning their strategic goals. These dashboards provide information over the longest time frame—from a single financial quarter to years. 
+--> Operational: short-term performance tracking and intermediate goals
+Operational dashboards are, arguably, the most common type of dashboard. Because these dashboards contain information on a time scale of days, weeks, or months, they can provide performance insight almost in real-time. 
+--> Analytical: consists of the datasets and the mathematics used in these sets
+Analytic dashboards contain a vast amount of data used by data analysts. These dashboards contain the details involved in the usage, analysis, and predictions made by data scientists.  Analytic dashboards are usually created and maintained by data science teams and rarely shared with upper management as they can be very difficult to understand. 
+
+===> Dashboards can help companies perform many helpful tasks, such as:
+. Track historical and current performance.
+. Establish both long-term and/or short-term goals.
+. Define key performance indicators or metrics.
+. Identify potential issues or points of inefficiency.
+. While almost every company can benefit in some way from using a dashboard, larger companies and companies with a wider range of products or services will likely benefit more.
+
+GLOASSARY FROM MODULE-2:
+- Data-inspired decision-making: The process of exploring different data sources to find out what they have in common
+- Metric: A single, quantifiable type of data that is used for measurement 
+- Return on investment (ROI): A formula that uses the metrics of investment and profit to evaluate the success of an investment
+- Revenue: The total amount of income generated by the sale of goods or services
+
+MODULE-3:
+
+DATALIFE CYCLE OF SPREADSHEET-
+-->PLAN: Plan for the users who will work within a spreadsheet by developing organizational standards. This can mean formatting your cells, the headings you choose to highlight, the color scheme, and the way you order your data points. When you take the time to set these standards, you will improve communication, ensure consistency, and help people be more efficient with their time.
+
+--> CAPTURE: Capture data by the source by connecting spreadsheets to other data sources, such as an online survey application or a database. This data will automatically be updated in the spreadsheet. That way, the information is always as current and accurate as possible.
+
+-->MANAGE: Manage different kinds of data with a spreadsheet. This can involve storing, organizing, filtering, and updating information. Spreadsheets also let you decide who can access the data, how the information is shared, and how to keep your data safe and secure. 
+
+-->ANALYZE: Analyze data in a spreadsheet to help make better decisions. Some of the most common spreadsheet analysis tools include formulas to aggregate data or create reports, and pivot tables for clear, easy-to-understand visuals. 
+
+-->ARCHIVE: Archive any spreadsheet that you don’t use often, but might need to reference later with built-in tools. This is especially useful if you want to store historical data before it gets updated. 
+
+-->DESTROY: Destroy your spreadsheet when you are certain that you will never need it again, if you have better backup copies, or for legal or security reasons. Keep in mind, lots of businesses are required to follow certain rules or have measures in place to make sure data is destroyed properly.
+
+STEPS TO ACCESS A SPREADSHEET:
+STEP-1: Access a spreadsheet application
+There are many excellent spreadsheet applications available to data analysts, such as Google Sheets, Microsoft Excel, and more
+
+STEP-2: Create a new spreadsheet
+Open google sheets. In the Start a new spreadsheet section, click Blank  to create a new blank spreadsheet.
+Now you’ve got a new spreadsheet that you can use to enter your data!
+
+STEP-3: EDIT AND FORMAT YOUR SPREADSHEET
+1. After you create your sheet, give it a title. In the upper left corner of your sheet, click Untitled spreadsheet and enter a title. Make your title clear and concise. It should describe what the data in the spreadsheet is about. For example, you could use the title Bakery Sales March 2020 or something similar. 
+
+2. Next, enter your column headers. The first row of the spreadsheet is for data attributes, which is another name for column headers. An attribute is a characteristic or quality of data used to label a column in a table. It's basically labeling the type of data in each column. In this case, you want to enter data for transaction date, product name, price, and quantity. Click in cell A1 and enter your first header: Date. Click in cell B1 and enter your next header: Name. Repeat this process for the rest of the attributes. 
+
+3. Next, format your column headings to make them stand out clearly. For example, you can make the headings stand out from the rest of the rows by using bold and center align. Click on cell A1 and drag the handle across to cell D1 (you have now selected the range A1:D1). Next, click the bold icon on the toolbar. Then, click the Center align icon on the toolbar
+
+ 4. Now, enter relevant data for each column (Date, Name, Price, Quantity). Feel free to use the data contained in the example above, or create your own. 
+
+5. If you want to add another column between two existing columns, you can insert a new column. First, click on a column to select it. Then, click Insert on the menu bar and choose where to add the column. You can do the same thing to insert rows.
+
+6. If you want to move an existing row or column, click the row number or column letter to select it. Then, drag it to a new location.
+
+7. If you want to delete an existing row or column, right-click on the row number or column letter that you want to delete. Then, select Delete in the popup menu.  
+
+8. (Optional) Feel free to explore some of the other features in Google Sheets. Later in the course, we’ll cover many of these features in detail. For example, you can click Insert on the menu bar and experiment with charts, images, drawings, and more. 
+
+9. As mentioned earlier, your data is saved automatically as you are working.
+
+Now that you’ve set up your spreadsheet, share it with others. 
+
+STEP-4: SHARE YOUR SPREADSHEET-
+
+Collaborating with team members is an important part of being a data analyst. When you collaborate, people can make changes at the same time, and you can see their changes as they happen. 
+--> In Google Sheets, users have different access privileges. As owner of the sheet, you can choose the access level for your collaborators. Click Editor in the dropdown and choose the access level:
+
+- Can edit—collaborators can add and edit content or comments. Choose this access level if you want them to be able to make changes to your spreadsheet.
+
+- Can comment—collaborators can add comments, but can't edit content. Choose this level if you just want their feedback.
+
+- Can view—collaborators can view the file, but cannot edit or add comments. Choose this level if you want to share a spreadsheet as an optional resource and you don’t need feedback.
+
+STEP-5:SHARE A LINK TO A FILE OR FOLDER
+
+You can send other people a link to a file or folder so that anyone with the link can open it. This is useful when you want to share your file or folder with a large group and do not want to type in everyone’s individual email addresses. You can share files that you own or have edit access to.
+1. To start, click the Share icon. 
+
+2. In the Get link section of the pop-up window, you’ll notice that the default is Restricted so that only users with whom you’ve shared the file or folder via email can access it.
+
+3. But, if you want to allow others to access your file or folder without having to add their email addresses, click Change.
+By default, your organization is selected. Now choose an access level.
+
+4. Click Copy link.
+
+5. Click Done.
+
+6. Paste the link in an email or any place you want to share it. If the recipient is in your organization, they will be able to access your file or folder without you having to grant them individual access.
+
+STEP-6: UNSHARE YOUR SPREADSHEET-
+You can also stop sharing a spreadsheet that you own at any time. You may want to do this if someone switched jobs or teams and should no longer be looking at your data.
+
+1. To start, click the Share icon. 
+
+2. Click on the dropdown menu that shows the access level for the person you want to stop sharing the file with, then click Remove.
+
+3. Finally, click Save.
+
+STEP-7: COMMENT ON YOUR SPREADSHEET-
+Google Sheets lets you and your collaborators add comments to your sheet and reply to those comments. As a data analyst, this is a great way to share feedback with your teammates. 
+
+1. In your sheet, select the cell or cells you'd like to comment on.
+
+2. Do one of the following:
+
+Right click on the cell and click on Comment in the pop-up menu. 
+
+Or click the Comment icon in the menu bar at the top of your sheet. 
+3. Next, enter your comment in the box.
+
+4. (Optional) To direct your comment to a specific person, enter an at sign (@) followed by their email address. You can add as many people as you want. Each person will get an email with your comment and a link to the spreadsheet file. If that person does not currently have access to your file, Google Sheets will notify you in a pop-up window and ask if you want to grant that user access..
+
+5. (Optional) To assign the comment to a specific person, check the Assign to box.
+
+6. Finally, click Comment or Assign.
+
+FORMULAS =>
+==> One of the most valuable spreadsheet features is a formula. As a quick reminder, a formula is a set of instructions that does a specific calculation using the data in a spreadsheet. Formulas make it easy for data analysts to do powerful calculations automatically, which helps them analyze data more effectively. Below is a  quick-reference guide to help you get the most out of formulas.
+
+Formulas
+==> The basics
+- When you enter a formula in math, it generally ends with an equal sign (2 + 3 = ?). But with formulas, they always start with one instead (=A2+A3). The equal sign tells the spreadsheet that what follows is part of a formula, not just a word or number in a cell. 
+
+- After you enter the equal sign, most spreadsheet applications will display an autocomplete menu that lists valid formulas, names, and text strings. This is a great way to create and edit formulas while avoiding typing and syntax errors.
+
+==> Mathematical operators
+The mathematical operators used in spreadsheet formulas include:
+Subtraction – minus sign ( - )
+Addition – plus sign ( + )
+Division – forward-slash ( / )
+Multiplication – asterisk ( * )
+
+==> Absolute referencing
+- Absolute referencing is marked by a dollar sign ($). For example, =$A$10 has absolute referencing for both the column and the row value
+
+- Relative references (which is what you normally do, e.g. “=A10”) will change anytime the formula is copied and pasted. They are in relation to where the referenced cell is located. For example if you copied “=A10” to the cell to the right it would become “=B10”. With absolute referencing “=$A$10” copied to the cell to the right would remain “=$A$10”. But if you copied $A10 to the cell below, it would change to $A11 because the row value isn't an absolute reference.
+
+- Absolute references will not change when you copy and paste the formula in a different cell. The cell being referenced is always the same.
+
+==> Combining with functions
+COUNTIF() is a formula and a function. This means the function runs based on criteria set by the formula. In this case, COUNT is the formula; it will be executed IF the conditions you create are true. For example, you could use =COUNTIF(A1:A16, “7”) to count only the cells that contained the number 7. Combining formulas and functions allows you to do more work with a single command. 
+
+ERRORS IN SPREADSHEETS-
+check out the pdf
+ 
+CONDITIONAL FORMATING
+Pro tip: Spotting errors in spreadsheets with conditional formatting
+Conditional formatting can be used to highlight cells a different color based on their contents. This feature can be extremely helpful when you want to locate all errors in a large spreadsheet. For example, using conditional formatting, you can highlight in yellow all cells that contain an error, and then work to fix them.
+
+==> Conditional formatting in Microsoft Excel
+To set up conditional formatting in Microsoft Excel to highlight all cells in a spreadsheet that contain errors, do the following:
+
+1. Click the gray triangle above row number 1 and to the left of Column A to select all cells in the spreadsheet.
+
+2. From the main menu, click Home, and then click Conditional Formatting to select Highlight Cell Rules > More Rules.
+
+3. For Select a Rule Type, choose Use a formula to determine which cells to format.
+
+4. For Format values where this formula is true, enter =ISERROR(A1).
+
+5. Click the Format button, select the Fill tab, select yellow (or any other color), and then click OK. 
+
+6. Click OK to close the format rule window.
+
+7. To remove conditional formatting, click Home and select Conditional Formatting, and then click Manage Rules. Locate the format rule in the list, click Delete Rule, and then click OK.
+
+
+==> Conditional formatting in Google Sheets
+To set up conditional formatting in Google Sheets to highlight all cells in a spreadsheet that contain errors, do the following:
+
+1. Click the empty rectangle above row number 1 and to the left of Column A to select all cells in the spreadsheet.
+
+2. From the main menu, click Format and select Conditional Formatting to open the Conditional format rules pane on the right.
+
+3. While in the Single Color tab, under Format rules, use the drop-down to select Custom formula is, enter =ISERROR(A1), select yellow (or any other color) for the formatting style, and then click Done.
+
+4. To remove conditional formatting, click Format and select Conditional Formatting, and then click the Trash icon for the format rule.
+
+
+SCOPE OF WORK(SOW)-
+Creating an SOW helps to make sure that everyone involved, from analysts and engineers to managers and stakeholders, shares the understanding of what those business goals are, and the plan for accomplishing them.
+= As you ask more and more questions to clarify requirements, goals, data sources, stakeholders, and any other relevant info, an SOW helps you formalize it all by recording all the answers and details
+--> Ask means two things in this
+- Preparing to write an SOW is about asking questions to learn the necessary information about the project, but it’s also about clarifying and defining what you’re being asked to accomplish, and what the limits or boundaries of the “ask” are
+*There’s no standard format for an SOW*
+===> Deliverables: What work is being done, and what things are being created as a result of this project? When the project is complete, what are you expected to deliver to the stakeholders? Be specific here. Will you collect data for this project? How much, or for how long?   
+
+===> Milestones: This is closely related to your timeline. What are the major milestones for progress in your project? How do you know when a given part of the project is considered complete?
+
+===>Timeline: Your timeline will be closely tied to the milestones you create for your project. The timeline is a way of mapping expectations for how long each step of the process should take. The timeline should be specific enough to help all involved decide if a project is on schedule. When will the deliverables be completed? How long do you expect the project will take to complete? If all goes as planned, how long do you expect each component of the project will take? When can we expect to reach each milestone?
+
+===>Reports: Good SOWs also set boundaries for how and when you’ll give status updates to stakeholders. How will you communicate progress with stakeholders and sponsors, and how often? Will progress be reported weekly? Monthly? When milestones are completed? What information will status reports contain?
+
+UNDERSTANDING STAKEHOLDER ROLES:
+--Vice president of sales
+The VP of sales provides strategic and operational direction but is less interested in specific details
+
+--Sales team
+Members of the sales team have direct interactions with customers and are highly attuned to how the company performed over the past year. They can provide detailed information on the types of data that will matter most to the company’s customers 
+
+--Data analytics team
+The data analysts on Ning’s team each have a dataset that they focus on and can help pull the various types of data that Ning needs to satisfy the other stakeholders. Ning collaborates with them to complete the report.
+
+--Data science managers
+The data science managers oversee all of the company’s datasets and can help Ning prioritize the types of data and analyses required for the annual report. They can also advise on making an effective presentation.
