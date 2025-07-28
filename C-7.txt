@@ -257,6 +257,6 @@ These notebooks can be executable documents that you can run to perform an analy
 If you are working in Kaggle, there are two types of notebooks available: Jupyter notebooks and scripts 
 -- Jupyter notebooks in Google Colab
 Google Colab is a product from Google Research. Colab is a hosted Jupyter notebook service that requires no setup to use.
-
+-- to install R Markdown - run 'install.packages('rmarkdown') '
 
 ```
