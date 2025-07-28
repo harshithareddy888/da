@@ -246,4 +246,9 @@ example_df <- bookings_df %>%
             average_lead_time = mean(lead_time))
 
 head(example_df)
+
+
+==> R markdown
+R Markdown is a useful tool that allows you to save and execute code, and generate shareable reports for stakeholders
+
 ```
