@@ -258,5 +258,6 @@ If you are working in Kaggle, there are two types of notebooks available: Jupyte
 -- Jupyter notebooks in Google Colab
 Google Colab is a product from Google Research. Colab is a hosted Jupyter notebook service that requires no setup to use.
 -- to install R Markdown - run 'install.packages('rmarkdown') '
-
+The knit button can be used to save an R Markdown document as a shareable HTML report. 
+A data analyst has code chunks in their R Markdown file. they appear in an HTML report as generated Output
 ```
