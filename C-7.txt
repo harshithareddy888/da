@@ -251,4 +251,12 @@ head(example_df)
 ==> R markdown
 R Markdown is a useful tool that allows you to save and execute code, and generate shareable reports for stakeholders
 
+==>Jupyter notebooks are documents that contain computer code and rich text elements – such as comments, links, or descriptions of your analysis and results. You will find them used in a variety of online tools, including Project Jupyter, Kaggle, and Google Colaboratory 
+These notebooks can be executable documents that you can run to perform an analysis
+-- Jupyter notebooks in Kaggle
+If you are working in Kaggle, there are two types of notebooks available: Jupyter notebooks and scripts 
+-- Jupyter notebooks in Google Colab
+Google Colab is a product from Google Research. Colab is a hosted Jupyter notebook service that requires no setup to use.
+
+
 ```
