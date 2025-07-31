@@ -9,3 +9,4 @@ Steps :
 Introduction to building your portfolio : 
 Your case study will demonstrate these fundamental skills to prospective employers and showcase what you have learned from the Google Data Analytics Certificate. It will represent your knowledge and capabilities in your portfolio.
 
+CASE PROJECT: A case study is a common way for employers to assess your skills and observe how you would approach a data-related project.
