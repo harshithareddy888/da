@@ -6,13 +6,13 @@ This folder contains all the notes, screenshots, and reference materials I compi
 - C-1 to C-8:
 These are my personal notes for each course, named according to their order in the certification. Each document contains key takeaways, definitions, examples, and summaries broken down module-wise.
 
-Screenshots:
+- Screenshots:
 This subfolder includes selected screenshots of important visual explanations, charts, or dashboards shown during the videos.
 
-Course Documents:
+- Course Documents:
 All reference PDFs, checklists, templates, and case study documents provided by Coursera during the course are saved here for offline access.
 
-Course Mapping
+# Course Mapping
 C-1: Foundations: Data, Data, Everywhere
 
 C-2: Ask Questions to Make Data-Driven Decisions
