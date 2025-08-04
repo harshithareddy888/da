@@ -29,13 +29,14 @@ C-7: Data Analysis with R Programming
 
 C-8: Capstone Project: Complete a Case Study
 
-Purpose
+# Purpose
+
 This folder serves as a complete reference for everything I learned during the certification. The goal was to:
 
-Keep detailed yet concise notes for quick revision
+- Keep detailed yet concise notes for quick revision
 
-Collect all downloadable resources in one place
+- Collect all downloadable resources in one place
 
-Have visual references (screenshots) of important concepts and walkthroughs
+- Have visual references (screenshots) of important concepts and walkthroughs
 
 If you're taking or reviewing the Google Data Analytics course, this folder might help as a quick refresher or a structured guide through the content.
